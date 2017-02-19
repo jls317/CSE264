@@ -1,0 +1,79 @@
+
+/* 
+    Created on : Feb 1, 2017, 5:27:49 PM
+    Author     : Jeffrey
+*/
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+}
+h2{
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+}
+h3, p{
+    text-indent: 20px;
+    font-family: verdana;
+}
+ul{
+    list-style-type:circle;
+    font-family: verdana;
+}
+tr{
+    text-align: center;
+}
+strong{
+    font-size: 45px;
+}
+ol{
+    font-size: 12px;
+    font-family: verdana;
+}
+a{
+    color: white;
+}
+b{
+    font-size: 20px;
+}
+
+#container{
+    width: 800px;
+    height: 1006px;
+    border-style: solid; 
+    background-color:dimgray;
+    float: top;
+}
+#banner{
+    float: top;
+    background-image: url("mountains.png");
+    background-position: top;
+    color: black;
+    text-align: center;
+}
+#col1{
+    color: white;
+    padding-left: 10px;
+    background-color: transparent;
+    font-size: 15px;
+    float: left;
+    width: 550px;
+    
+}
+#col2{
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    border-left-style: solid;
+    float: right;
+    width: 237px;
+    height: 820px;
+}
+#footer{
+    width: 800px;
+    float: left;
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+}

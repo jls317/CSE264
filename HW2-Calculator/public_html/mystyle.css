@@ -1,0 +1,93 @@
+/* 
+    Created on : Feb 18, 2017, 10:04:14 PM
+    Author     : Jeffrey
+*/
+p{
+    font-family: "Courier New";
+    font-size: 30px;
+    text-align: center;
+}
+h2{
+    font-family:"Lucida Console";
+    text-align: right;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+}
+#calc{
+    height: 660px;
+    width: 490px;
+    background-color: silver;
+}
+
+#display{
+    height: 75px;
+    width: 465px;
+    margin-left: 10px;
+    border-style: solid;
+    background-color: grey;
+    border-color: white;
+    /*text*/
+    
+}
+#clear{
+    float: right;
+    height:100px;
+    width: 220px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    /*text*/
+    color: white;
+}
+#numbers{
+    
+    float: right;
+    width: 375px;
+}
+#functions{
+    float: right;
+}
+#push{
+    
+    float: right;
+}
+#right{
+    margin-right:10px;
+    float: right;
+}
+#numleft{
+    float: right;
+}
+#nummid{
+    float: right;
+}
+#numright{
+    float: right;
+}
+#numbers{
+    margin-right: 10px;
+    float: right;
+    width: 1000px;
+}
+
+#push, #divide, #mult, #sub, #add, #equal, #dec, #posneg{
+    margin-left: 15px;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    /*text*/
+    color: white;
+}
+#nine, #eight, #seven, #six, #five, #four, #three, #two, #one, #zero{
+    margin-left: 15px;
+    height:100px;
+    width: 100px;
+    background-color: red;
+    border-style: solid;
+    border-color: white;
+    /*text*/
+    color: black;
+}
