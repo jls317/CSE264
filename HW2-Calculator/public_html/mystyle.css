@@ -1,55 +1,64 @@
 /* 
-    Created on : Feb 18, 2017, 10:04:14 PM
-    Author     : Jeffrey
+    Jeffrey Stewart
+    CSE264
 */
 p{
     font-family: "Courier New";
-    font-size: 30px;
-    text-align: center;
-}
-h2{
-    font-family:"Lucida Console";
-    text-align: right;
     font-size: 35px;
-    color: black;
+    text-align: center;
     font-weight: bold;
 }
+h1{
+    font-size: 10px;
+    text-align: center;
+    color: darkgray;
+}
 #calc{
-    height: 660px;
-    width: 490px;
+    height: 670px;
+    width: 485px;
     background-color: silver;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 #display{
-    height: 75px;
+    height: 50px;
     width: 465px;
     margin-left: 10px;
     border-style: solid;
-    background-color: grey;
+    border-radius: 10px;
+    background-color: lightsteelblue;
     border-color: white;
     /*text*/
-    
+    font-family:"Lucida Console";
+    text-align: right;
+    vertical-align: middle;
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
 }
 #clear{
     float: right;
     height:100px;
-    width: 220px;
-    background-color: black;
+    width: 216px;
+    background-color: lightsteelblue;
     border-style: solid;
     border-color: white;
+    border-radius: 10px;
+    margin: 5px;
     /*text*/
-    color: white;
+    color: black;
 }
 #numbers{
-    
+
     float: right;
     width: 375px;
 }
 #functions{
     float: right;
 }
-#push{
-    
+#clearAll{
+
     float: right;
 }
 #right{
@@ -71,23 +80,28 @@ h2{
     width: 1000px;
 }
 
-#push, #divide, #mult, #sub, #add, #equal, #dec, #posneg{
+#clearAll, #divide, #mult, #sub, #add, #push, #dec, #posneg{
     margin-left: 15px;
     height: 100px;
     width: 100px;
-    background-color: black;
+    background-color: lightsteelblue;
     border-style: solid;
     border-color: white;
+    border-radius: 10px;
+    margin: 5px;
     /*text*/
-    color: white;
+    color: black;
 }
 #nine, #eight, #seven, #six, #five, #four, #three, #two, #one, #zero{
     margin-left: 15px;
+    margin: 5px;
     height:100px;
     width: 100px;
-    background-color: red;
+    background-color: lightsteelblue;
     border-style: solid;
     border-color: white;
+    border-radius: 10px;
     /*text*/
-    color: black;
+    color: red;
+
 }
