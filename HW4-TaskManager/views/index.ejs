@@ -1,0 +1,93 @@
+<% include header %>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  
+<form method="post" role="form" id="addForm">
+	
+	<body onload="hidefield()">
+
+	<div class="form-group">
+		<label for="task">Task:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+		<input type="text" id="task" name="task" placeholder="Task Name" required>
+		<label for="dueDate">Due Date:&nbsp</label>
+		<input type="text" id="datepicker" name="datepicker">
+	</div>
+	<div style="height:60px;">
+	<div class="form-group" style="float:left;">
+		<label for="type">Type:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+		<select name="type" id="type" onchange="showfield(this.options[this.selectedIndex].value)" style="height: 25px; width:155px;" required>
+			<option value="" selected="selected">Please Select...</option>
+			<option value="Next Action"> Next Action </option>
+			<option value="Waiting For"> Waiting For </option>
+			<option value="Talk To"> Talk To </option>
+			<option value="Future"> Future </option>
+			<option value="Someday/Maybe"> Someday/Maybe </option>
+		</select>
+		
+		
+	</div>
+	<div id="div1" style="padding-left: 307px;"><input type="text" name="details" placeholder="Enter Details" /></div>
+	</div>
+
+	<div class="form-group">
+		<input type="submit" value="add" class="btn btn-primary" formaction="/add" form="addForm">
+	</div>
+</form>
+	<br>
+	<br>
+	<br>
+	
+
+
+<% if (entries.length) { %>
+<form method="post" role="form" id="removeForm">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Task</th>
+				<th>Type</th>
+				<th>Due Date</th>
+		</thead>
+		<tbody>
+	<% entries.forEach(function(todoItem) { %>
+				
+			<tr>	
+				<th>
+					<input type="checkbox" name="entry" value="<%= todoItem.id %>">
+				</th>
+				<th>
+					<%= todoItem.task %>
+				</th>
+				<th>
+					<%= todoItem.type %>
+				</th>
+				<th>
+					<%= todoItem.dueDate %>
+				</th>
+			</tr>
+		
+	<% }) %>
+	</tbody>
+	</table>
+	<input type="submit" value="remove" class="btn btn-primary" formaction="/remove" form="removeForm">
+</form>
+<% } else { %> No entries.
+<% } %>		
+
+<script type="text/javascript">
+  function showfield(name){
+    if(name=='Talk To' || name=='Waiting For')document.getElementById('div1').style.display="block";
+    else document.getElementById('div1').style.display="none";
+  }
+ 
+ function hidefield() {
+ document.getElementById('div1').style.display='none';
+ }
+  </script>

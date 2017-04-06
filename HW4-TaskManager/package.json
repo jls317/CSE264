@@ -1,0 +1,19 @@
+{
+  "name": "hw4",
+  "version": "1.0.0",
+  "description": "Task Manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jls317/CSE264.git"
+  },
+  "author": "Jeffrey Stewart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jls317/CSE264/issues"
+  },
+  "homepage": "https://github.com/jls317/CSE264#readme"
+}
