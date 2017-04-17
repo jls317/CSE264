@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+Jeffrey Stewart
+jls317
+CSE264
+04/12/2017
+HW5-MagneticPoetry
+-->
+<html>
+	<head>
+		<title>Magnetic Poetry</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<link rel="stylesheet" href="spectrum.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		
+	</head>
+	
+	<body>
+		<div id="backgrounddiv">
+			<div id="inputdiv">
+				<!--
+				Text Input
+				Color Picker
+				Submit Button
+				-->
+					<div class="form-group">			
+						<input type="text" id="inWord" name="inWord" placeholder="Enter a Word" required/>
+						<div id="cpick">
+							<input type="text" id="custom" value=''/>
+						</div>
+						<input type="submit" value="add" id="submit" form="inWordForm" onclick="addWord()"/>
+
+						<div id="trash"> <img src="trash.png" height="60px" width="60px"></div>
+						
+					</div>
+			</div>
+		</div>
+		
+		<script src="myscript.js"></script>
+		<script src="spectrum.js"></script>
+		
+		
+	</body>
+</html>
