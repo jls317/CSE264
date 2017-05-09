@@ -1,0 +1,61 @@
+#prompt, #title {
+    text-align: center;
+    width: 250px;
+}
+#options, #customBoard{
+    width: 260px;
+}
+#radioOptions label {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.2em;
+}
+#radioOptions label input[type="radio"] {
+  margin: 0.5em auto;
+}
+#customBoard label{
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.2em;
+    width: 75px;
+}
+#customBoard label input[type="number"]{
+    display: inline-block;
+    text-align: center;
+    margin: 0.5em auto;
+}
+#submitOptions{
+    width: 216px;
+}
+#board{
+    text-align: center;
+    visibility: hidden;
+}
+
+td{
+    width: 2em;
+    height: 2em;
+    border: solid black;
+}
+
+.bomb{
+    color: orange;
+    background-image: url("bomb.png");
+    background-size: 1.8em 1.8em;
+}
+.hid{
+    text-indent:-9999px;
+    white-space: nowrap; 
+    background-color: lightgray;
+    background-image: none;
+}
+.selected{
+    background-image: url("lock.png");
+    background-size: 1.8em 1.8em;  
+}
+
+.cell::selection{
+    background-color: white;
+}
+
