@@ -58,4 +58,22 @@ td{
 .cell::selection{
     background-color: white;
 }
+#game_info{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+}
+#selected{
+    float: left;
+    margin-left: 105px;
+    height: 20px;
+}
+#lock_image{
+    float: right;
+    margin-right: 100px;
+}
+#stopwatch{
+    width: inherit;
+    text-align: center;
+}
 
