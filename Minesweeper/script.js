@@ -26,7 +26,11 @@ var gameHeight;
 var gameWidth;
 var numBombs;
 var cellCount;
+var selectedCount;
 function startGame() {
+    selectedCount=0;
+    $("#selected").html(selectedCount);
+    resetTimer();
     createBoard();
     plantBombs();
     calcInfo();
@@ -127,7 +131,6 @@ function calcInfo() {
                 count++;
             }
             $("#" + i + "_" + j).html(count);
-            resetTimer();
         }
     }
 }
@@ -180,7 +183,7 @@ $(document).click(function (e) {
     }
 });
 
-var selectedCount = 0;
+
 $(document).mousedown(function (e) {
 
     if (e.which == 3) {
@@ -361,6 +364,7 @@ function checkCell(i, j) {
             $('#controls').fadeIn('fast');
             $('#controls').css("visibility", "visible");
             //remove game
+            $('#game_info').css("visibility", "hidden");
             $('.rows').remove();
 
         }
@@ -373,6 +377,7 @@ function checkCell(i, j) {
             $('#controls').fadeIn('fast');
             $('#controls').css("visibility", "visible");
             //remove game
+            $('#game_info').css("visibility", "hidden");
             $('.rows').remove();
         }
     }, 10);
